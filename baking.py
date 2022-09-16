@@ -17,13 +17,13 @@ def print_ingredients():  # Ways to work with strings/printing
      print(ingredient_1 +' '+ ingredient_2 +' '+ ingredient_3 +' '+ ingredient_4)
     # 1.3 Using one print statement, use an f-string to print the ingredients
     # as a single string (make sure to add a space between each ingredient!)
-     print(f'{ingredient_1} {ingredient_2}{ingredient_3} {ingredient_4}')
+     print(f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
 
 
 
 def confirm_ingredients():  # String methods
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
-     ingredients = f'{ingredient_1} {ingredient_2}{ingredient_3} {ingredient_4}'
+     ingredients = f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}'
     
     # Aha, that's the issue! We need to use butter, not milk.
     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
@@ -65,6 +65,6 @@ def favorite_bake():  # User Input/Type conversion
     # Use `type conversion` to fix the second one
     
      print(f'Ooooh, {baked_good}s are delicious!')
-     frequency = int(frequency)
-     print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+     #frequency = int(frequency)
+     print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
      
